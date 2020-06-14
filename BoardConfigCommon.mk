@@ -16,7 +16,7 @@
 # Inherit from common
 include device/samsung/msm8916-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/j5-common
+LOCAL_PATH := device/samsung/j3xpro-common
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
@@ -25,8 +25,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_j5
-TARGET_RECOVERY_DEVICE_MODULES := libinit_j5
+TARGET_INIT_VENDOR_LIB := libinit_j3xpro
+TARGET_RECOVERY_DEVICE_MODULES := libinit_j3xpro
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := false
