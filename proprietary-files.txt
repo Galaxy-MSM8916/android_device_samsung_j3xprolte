@@ -94,9 +94,9 @@ etc/Hdmi_cal.acdb
 etc/Headset_cal.acdb
 etc/Speaker_cal.acdb
 
-# RIL - J3110ZCU1ARA4 (Android 5.1)
-lib/libsec-ril-dsds.so|398daec983135d39526b953a7149d0390592b158
-lib/libsec-ril.so|153656f078747b359db475116c01f670e8b0aecf
+# RIL - J3119SZCU1ARH2 (Android 5.1)
+lib/libsec-ril-dsds.so|de90fac3031839f6873f859838a3976d9601569e
+lib/libsec-ril.so|2d8f892c20c3071f280261b6d57d3c4714697488
 
 # NFC (From https://github.com/NXPNFCProject/NXPNFCC_FW/blob/master/pn548ad/32-bit/libpn548ad_fw.so)
 vendor/firmware/libpn548ad_fw.so|88a35cebace27c3a93439972660f034b
