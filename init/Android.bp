@@ -16,9 +16,9 @@
 
 
 cc_library_static {
-    name: "libinit_j3xpro",
+    name: "libinit_j3xprolte",
     recovery_available: true,
-    srcs: ["init_j3xpro.cpp"],
+    srcs: ["init_j3xprolte.cpp"],
     include_dirs: [
         "system/core/base/include",
         "system/core/init",

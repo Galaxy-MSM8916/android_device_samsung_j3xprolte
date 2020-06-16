@@ -19,9 +19,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/samsung/msm8916-common/msm8916.mk)
 
 # Inherit from vendor
-$(call inherit-product-if-exists, vendor/samsung/j3xpro-common/j3xpro-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/j3xprolte/j3xprolte-vendor.mk)
 
-LOCAL_PATH := device/samsung/j3xpro-common
+LOCAL_PATH := device/samsung/j3xprolte
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi

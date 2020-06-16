@@ -82,3 +82,21 @@ vendor/lib/libqmi.so
 # QSEECOM - J5108ZMU1BRG1 (Android 6.0)
 bin/qseecomd|d05a6aff6075fd1e0ccc30c9bdde2b9c14aee0e1
 vendor/lib/libQSEEComAPI.so|b9219241cb93f407658af2972cbef3ebdd1a0e57
+
+# Belows are merged from j3xproltechn
+
+# ACDB - J3110ZCU1ARA4 (Android 5.1)
+etc/Bluetooth_cal.acdb
+etc/General_cal.acdb
+etc/Global_cal.acdb
+etc/Handset_cal.acdb
+etc/Hdmi_cal.acdb
+etc/Headset_cal.acdb
+etc/Speaker_cal.acdb
+
+# RIL - J3110ZCU1ARA4 (Android 5.1)
+lib/libsec-ril-dsds.so|398daec983135d39526b953a7149d0390592b158
+lib/libsec-ril.so|153656f078747b359db475116c01f670e8b0aecf
+
+# NFC (From https://github.com/NXPNFCProject/NXPNFCC_FW/blob/master/pn548ad/32-bit/libpn548ad_fw.so)
+vendor/firmware/libpn548ad_fw.so|88a35cebace27c3a93439972660f034b

@@ -16,7 +16,10 @@
 # Inherit from common
 include device/samsung/msm8916-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/j3xpro-common
+LOCAL_PATH := device/samsung/j3xprolte
+
+# Asserts
+TARGET_OTA_ASSERT_DEVICE += j3xprolte,j3xproltechn,j3xproltezc,j3xproltectc,j3xpro6mltechn,j3xpro6mltezc
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
@@ -25,15 +28,26 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_j3xpro
-TARGET_RECOVERY_DEVICE_MODULES := libinit_j3xpro
+TARGET_INIT_VENDOR_LIB := libinit_j3xprolte
+TARGET_RECOVERY_DEVICE_MODULES := libinit_j3xprolte
+
+# Kernel
+TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_j3xprolte_chnopen_defconfig
+#TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_j3xprolte_chnctc_defconfig
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := false
 
+# Radio
+SIM_COUNT := 2
+
 # RIL
 BOARD_MODEM_TYPE := xmm7260
 BOARD_PROVIDES_LIBRIL := true
+
+# Partition sizes
+BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 1975517184
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 12742275072
 
 # Wifi
 BOARD_HAVE_SAMSUNG_WIFI := true
