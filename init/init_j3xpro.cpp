@@ -180,6 +180,11 @@ void vendor_load_properties()
 		model = (char *)"SM-J3119";
 		set_lte_properties();
 	}
+	else if (bootloader.find("J3119S") == 0) {
+		device = (char *)"j3xpro6mltechn";
+		model = (char *)"SM-J3119S";
+		set_lte_properties();
+	}
 	else {
 		return;
 	}
