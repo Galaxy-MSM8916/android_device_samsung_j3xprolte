@@ -142,16 +142,9 @@ void set_target_properties(const char *device, const char *model)
 	/* check and/or set fingerprint */
 	set_fingerprint();
 
-	/* check for multi-sim devices */
-
-	/* check if the simslot count file exists */
-	if (access(SIMSLOT_FILE, F_OK) == 0) {
-		int sim_count = read_integer(SIMSLOT_FILE);
-
-		/* set the dual sim props */
-		if (sim_count == 2)
-			set_dsds_properties();
-	}
+	/* Set RIL Properties */
+	set_lte_properties();
+	set_dsds_properties();
 
 	char const *serial_number_file = SERIAL_NUMBER_FILE;
 	std::string serial_number;
@@ -173,17 +166,14 @@ void vendor_load_properties()
 	if (bootloader.find("J3110") == 0) {
 		device = (char *)"j3xproltechn";
 		model = (char *)"SM-J3110";
-		set_lte_properties();
 	}
 	else if (bootloader.find("J3119") == 0) {
 		device = (char *)"j3xproltectc";
 		model = (char *)"SM-J3119";
-		set_lte_properties();
 	}
 	else if (bootloader.find("J3119S") == 0) {
 		device = (char *)"j3xpro6mltechn";
 		model = (char *)"SM-J3119S";
-		set_lte_properties();
 	}
 	else {
 		return;
