@@ -38,6 +38,9 @@ TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_j3xprolte_chnopen_defconfig
 # Lights
 TARGET_PROVIDES_LIBLIGHT := false
 
+# NFC
+-include device/samsung/msm8916-common/nfc/pn547/board.mk
+
 # Radio
 SIM_COUNT := 2
 
