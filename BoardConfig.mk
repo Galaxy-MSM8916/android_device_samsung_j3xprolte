@@ -16,16 +16,16 @@
 # Inherit from common
 include device/samsung/msm8916-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/j3xprolte
+DEVICE_PATH := device/samsung/j3xprolte
 
 # Asserts
 TARGET_OTA_ASSERT_DEVICE += j3xprolte,j3xproltechn,j3xproltezc,j3xproltectc,j3xpro6mltechn,j3xpro6mltezc
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Include
-TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
+TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_j3xprolte
